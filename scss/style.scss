@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/***************
+variables
+****************/
+$fontFamily: 'Montserrat', sans-serif;
+$fontSize: 16px;
+$lightBlue: #00aeef;
+$darkBlue: #0b223d;
+$white: #fff;
+$transition: .3s ease;
+
+
+/***************
+basic styles
+****************/
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $darkBlue;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: $darkBlue;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+
+/***************
+mixins
+****************/
+@mixin h2 {
+    font-size: 3rem;
+    text-align: center;
+    &::after {
+        content: "";
+        height: 15px;
+        width: 20%;
+        display: block;
+        background: linear-gradient(40deg, $lightBlue, $white);
+        margin: 10px auto 30px auto;
+    }
+}
+@mixin btn {
+    font-size: 1rem;
+    color: $white;
+}
+@mixin line {
+    
+}
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+/***************
+nav
+****************/
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+.nav-item {
+    margin-right: 25px;
+    .nav-link {
+        transition: $transition;
+    }
+    .nav-link:hover {
+        color: $lightBlue !important;
+    }
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+/***************
+header
+****************/
+header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(11, 34, 61, 0.1)), url(/img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 81vh;
+    //@include flex(flex-end, flex-end, row);
+    h1 {
+        font-size: 3rem;
+        color: $white;
+        background: linear-gradient(rgba(0, 174, 239, .5), rgba(0, 174, 239, .5));
+        display: inline-block;
+        padding: 30px 30px 30px 60px;
+        margin-bottom: 0;
+        text-align: right;
+        border-radius: 200px 0 0 0;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+}
