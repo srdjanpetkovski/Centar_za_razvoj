@@ -74,4 +74,165 @@ header h1 {
   letter-spacing: 1px;
   font-weight: 700;
 }
+
+/***************
+o nama
+****************/
+.o-nama {
+  padding: 50px 0;
+}
+
+.o-nama h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.o-nama h2::after {
+  content: "";
+  height: 15px;
+  width: 20%;
+  display: block;
+  background: linear-gradient(40deg, #00aeef, #fff);
+  margin: 10px auto 30px auto;
+}
+
+.o-nama h3 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.o-nama ul {
+  padding-left: 0;
+}
+
+.o-nama ul i {
+  font-weight: 900;
+  color: #00aeef;
+  margin-right: 10px;
+}
+
+.o-nama button {
+  font-size: 1rem;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  margin: 30px auto 0 auto;
+  background: -webkit-gradient(linear, right top, left top, from(#0b223d), to(#00aeef));
+  background: linear-gradient(to left, #0b223d, #00aeef);
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.o-nama button:hover {
+  border-radius: 0 20px 0 20px;
+}
+
+/***************
+usluge
+****************/
+.usluge {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 174, 239, 0.8)), to(rgba(0, 174, 239, 0.8))), url(/img/bg.jpg);
+  background-image: linear-gradient(rgba(0, 174, 239, 0.8), rgba(0, 174, 239, 0.8)), url(/img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 400px 0 0 0;
+}
+
+.usluge .container {
+  padding: 50px 0;
+}
+
+.usluge .container h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.usluge .container h2::after {
+  content: "";
+  height: 15px;
+  width: 20%;
+  display: block;
+  background: linear-gradient(40deg, #00aeef, #fff);
+  margin: 10px auto 30px auto;
+}
+
+.usluge .container i {
+  font-size: 2rem;
+}
+
+.usluge .container p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/***************
+mentorske usluge
+****************/
+.menUsluge {
+  padding: 50px 0;
+}
+
+.menUsluge h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.menUsluge h2::after {
+  content: "";
+  height: 15px;
+  width: 20%;
+  display: block;
+  background: linear-gradient(40deg, #00aeef, #fff);
+  margin: 10px auto 30px auto;
+}
+
+.menUsluge button {
+  font-size: 1rem;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  margin: 30px auto 0 auto;
+  background: -webkit-gradient(linear, right top, left top, from(#0b223d), to(#00aeef));
+  background: linear-gradient(to left, #0b223d, #00aeef);
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.menUsluge button:hover {
+  border-radius: 0 20px 0 20px;
+}
+
+/***************
+preporuke
+****************/
+.preporuke {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 174, 239, 0.8)), to(rgba(0, 174, 239, 0.8))), url(/img/bg.jpg);
+  background-image: linear-gradient(rgba(0, 174, 239, 0.8), rgba(0, 174, 239, 0.8)), url(/img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 400px 0 0;
+}
+
+.preporuke h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.preporuke h2::after {
+  content: "";
+  height: 15px;
+  width: 20%;
+  display: block;
+  background: linear-gradient(40deg, #00aeef, #fff);
+  margin: 10px auto 30px auto;
+}
 /*# sourceMappingURL=style.css.map */

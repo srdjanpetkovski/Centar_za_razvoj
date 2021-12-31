@@ -9,7 +9,7 @@ $lightBlue: #00aeef;
 $darkBlue: #0b223d;
 $white: #fff;
 $transition: .3s ease;
-
+$padding: 50px 0;
 
 /***************
 basic styles
@@ -35,6 +35,7 @@ mixins
 @mixin h2 {
     font-size: 3rem;
     text-align: center;
+    font-weight: 700;
     &::after {
         content: "";
         height: 15px;
@@ -47,10 +48,18 @@ mixins
 @mixin btn {
     font-size: 1rem;
     color: $white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px 0 20px 0;
+    margin: 30px auto 0 auto;
+    background: linear-gradient(to left, $darkBlue, $lightBlue);
+    display: block;
+    transition: $transition;
+    &:hover {
+        border-radius: 0 20px 0 20px;
+    }
 }
-@mixin line {
-    
-}
+
 @mixin flex($justify, $align, $direction) {
     display: flex;
     flex-wrap: wrap;
@@ -99,5 +108,80 @@ header {
         border-radius: 200px 0 0 0;
         letter-spacing: 1px;
         font-weight: 700;
+    }
+}
+
+/***************
+o nama
+****************/
+.o-nama {
+    padding: $padding;
+    h2 {
+        @include h2;
+    }
+    h3 {
+        font-size: 1.7rem;
+        margin: 10px 0;
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 0;
+        i {
+            font-weight: 900;
+            color: #00aeef;
+            margin-right: 10px;
+        }
+    }
+    button {
+        @include btn;
+    }
+}
+
+/***************
+usluge
+****************/
+.usluge {
+    background-image: linear-gradient(rgba(0, 174, 239, .8), rgba(0, 174, 239, .8)), url(/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 400px 0 0 0;
+    .container {
+        padding: $padding;
+        h2 {
+            @include h2;
+        }
+        i {
+            font-size: 2rem;
+        }
+        p {
+            color: $white;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/***************
+mentorske usluge
+****************/
+.menUsluge {
+    padding: $padding;
+    h2 {
+        @include h2;
+    }
+    button {
+        @include btn;
+    }
+}
+
+/***************
+preporuke
+****************/
+.preporuke {
+    background-image: linear-gradient(rgba(0, 174, 239, .8), rgba(0, 174, 239, .8)), url(/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 400px 0 0;
+    h2 {
+        @include h2;
     }
 }
