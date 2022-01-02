@@ -75,6 +75,13 @@ header h1 {
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 2rem;
+    padding: 15px 15px 15px 30px;
+  }
+}
+
 /***************
 o nama
 ****************/
@@ -219,6 +226,7 @@ preporuke
   background-position: center;
   background-size: cover;
   border-radius: 0 400px 0 0;
+  padding: 50px 0;
 }
 
 .preporuke h2 {
@@ -234,5 +242,49 @@ preporuke
   display: block;
   background: linear-gradient(40deg, #00aeef, #fff);
   margin: 10px auto 30px auto;
+}
+
+.preporuke .col-md-6 img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.preporuke .col-md-6 h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.preporuke .col-md-6 .lead {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #0b223d;
+  margin-top: 10px;
+}
+
+/***************
+footer
+****************/
+footer {
+  background: #0b223d;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p a {
+  color: #00aeef;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+footer p a:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

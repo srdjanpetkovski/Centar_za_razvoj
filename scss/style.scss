@@ -108,6 +108,10 @@ header {
         border-radius: 200px 0 0 0;
         letter-spacing: 1px;
         font-weight: 700;
+        @media (max-width:767px) {
+            font-size: 2rem;
+            padding: 15px 15px 15px 30px;
+        }
     }
 }
 
@@ -181,7 +185,47 @@ preporuke
     background-position: center;
     background-size: cover;
     border-radius: 0 400px 0 0;
+    padding: $padding;
     h2 {
         @include h2;
+    }
+    .col-md-6 {
+        img {
+            border-radius: 50%;
+            width: 60%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h4 {
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .lead {
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: $darkBlue;
+            margin-top: 10px;
+        }
+    }
+}
+
+/***************
+footer
+****************/
+footer {
+    background: $darkBlue;
+    padding: 25px 0;
+    text-align: center;
+    p {
+        color: $white;
+        a {
+            color: $lightBlue;
+            text-decoration: none;
+            transition: $transition;
+            &:hover {
+                color: $white;
+            }
+        }
     }
 }
